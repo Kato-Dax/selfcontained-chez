@@ -1,4 +1,4 @@
-# A Chez program, compiled into a standalone executable.
+# Compile a Chez Scheme program to a standalone executable
 
 The `compile.scm` script is the result of me trying to understand [chez-exe](https://github.com/gwatt/chez-exe)
 by stripping away everything, that is non-essential for my usecase, and merging everything
@@ -27,7 +27,7 @@ export SCHEME_DIRS=$(echo /usr/lib/csv*/ta6le/)
 
 ## Using the flake
 ```bash
-nix run github:Blugatroff/selfcontained-chez ./examples/hello.scm
+nix run github:Kato-Dax/selfcontained-chez ./examples/hello.scm
 ```
 
 ## Exposing more C functions
